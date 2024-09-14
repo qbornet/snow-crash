@@ -10,7 +10,7 @@ UID 2013 started us but we we expect 4242
 So the binary ask for a specific UID a quick look into /etc/passwd will give us the information,
 that no user with this UID exist we need to reverse the program we will use decompiler explorer.
 
-Decompile explorer will provide us a good information one that you have a function with a looking flag as parameter:
+Decompiler explorer will provide us a good information one that you have a function with a looking flag as parameter:
 
 ```c
 uVar2 = ft_des("boe]!ai0FB@.:|L6l@A?>qJ}I");
@@ -24,7 +24,7 @@ uVar2 = ft_des("boe]!ai0FB@.:|L6l@A?>qJ}I");
 printf("your token is %s\n",uVar2);
 ```
 
-So from this we will take the generated C code from the decompiler hidra modify it compile it and run the program.
+So from this we will take the generated C code from the decompiler Ghidra modify it compile it and run the program.
 
 Here the modified generated C code function from the decompiler to generate the flag:
 
