@@ -7,7 +7,7 @@ level13@SnowCrash:~$ ./level13
 UID 2013 started us but we we expect 4242
 ```
 
-So the binary ask for a specific UID since we meet this UID a quick look into /etc/passwd will give us the information,
+So the binary ask for a specific UID a quick look into /etc/passwd will give us the information,
 that no user with this UID exist we need to reverse the program we will use decompile explorer.
 
 Decompile explorer will provide us a good information one that you have a function with a looking flag as parameter:
