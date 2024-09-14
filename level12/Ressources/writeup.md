@@ -36,7 +36,7 @@ So it's a server that is up that accept two param x and y it will uppercase ever
 and x will be use in egrep.
 
 Egrep is equivalent to grep -E which means that the pattern interpolate the strings so we can use \`\` or $(...) notation,
-to pass a command the issue though is that since everything will be in uppercase wee need to create a new getflag command,
+to pass a command the issue though is that since everything will be in uppercase we need to create a new getflag command,
 so the idea here is to execute a bash script that will do multiple command in one argument since we also cannot do space.
 
 Here is the payload bash script:
@@ -64,5 +64,5 @@ Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
 level12@SnowCrash:~$
 ```
 
-We use the  $(...) notation but since we cannot specify /tmp/PAYLOAD because it's min so,
-we use * to fetch any valid directory with PAYLOAD inside, and as you can see it works we get the flag for level13.
+We use the  $(...) notation but since we cannot specify /tmp/PAYLOAD because it's min,
+we use * to fetch any valid directory with a file named PAYLOAD inside, and as you can see it works we get the flag for level13.
