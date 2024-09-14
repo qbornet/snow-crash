@@ -40,9 +40,9 @@ end
 ```
 
 so this look like server that is listening to port 5151 on localhost and wait for password once he received the password,
-he passed to the hash function and do a comparaision with the hash that he received and another hash.
+then it will be passed to the hash function and do a comparaision with the hash that he received and another hash.
 
-but if we take a close look at the hash function we will find something interesting.
+But if we take a close look at the hash function we will find something interesting.
 
 ```lua
 function hash(pass)
